@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "productName": "GTA 6 Hype Pulse",
+    "tagline": "סיכום חי של ההייפ העולמי סביב השקת GTA 6 — התופעה, לא המשחק.",
+    "lastUpdated": "2026-11-16T20:05:00+02:00",
+    "lastUpdatedLabel": "16 בנובמבר 2026, 20:05 שעון ישראל (Asia/Hebron)",
+    "disclaimer": "דף מידע עצמאי ולא רשמי. אין כאן מדריכים, ספוילרים או שיווק של רוקסטאר. איננו מזוהים עם Rockstar Games או Take-Two Interactive."
+  },
+  "release": {
+    "iso": "2026-11-19T00:00:00+02:00",
+    "dateLabel": "19 בנובמבר 2026",
+    "timeLabel": "חצות שעון ישראל",
+    "platforms": "PlayStation 5 · Xbox Series X|S",
+    "note": "בחנות הפלייסטיישן הישראלית מופיע מועד הפתיחה 18.11.2026 בשעה 22:00 UTC, שזה בדיוק חצות 19.11.2026 שעון ישראל. שירות Xbox Cloud Gaming ייפתח ב-08:00 שעון ישראל (01:00 ET), בכפוף לזמינות לפי שוק.",
+    "sources": [
+      {
+        "name": "Rockstar Games — העמוד הרשמי",
+        "url": "https://www.rockstargames.com/VI"
+      },
+      {
+        "name": "PlayStation Support — תאריך ושעת ההשקה",
+        "url": "https://www.playstation.com/en-us/support/games/gta-vi-support/"
+      },
+      {
+        "name": "PlayStation Store ישראל — Standard Edition",
+        "url": "https://store.playstation.com/en-il/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+      },
+      {
+        "name": "Xbox Wire — Cloud Gaming ב-1:00 ET",
+        "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+      }
+    ]
+  },
+  "status": {
+    "servers": {
+      "label": "מצב שרתים / עומס",
+      "value": "טרם הושק",
+      "detail": "המשחק עצמו עדיין סגור. ההורדה המוקדמת פתוחה מאז 10 בנובמבר, והיום נפרס עדכון קדם-השקה שני (01.002.001) בגלים ב-PS5 וב-Xbox. אין נתון רשמי חי על עומס שרתים לפני הפתיחה, ולכן לא מצוין כאן מספר.",
+      "sources": [
+        {
+          "name": "Rockstar — Pre-Load Now",
+          "url": "https://www.rockstargames.com/VI/pre-load-now"
+        },
+        {
+          "name": "Vice — עדכון 01.002.001, 16.11.2026",
+          "url": "https://www.vice.com/en/article/gta-6-second-day-one-patch-ps5-xbox/"
+        },
+        {
+          "name": "Polygon — שני עדכונים לפני ההשקה",
+          "url": "https://www.polygon.com/gta-6-nov-13-patch-102-what-is-download-size-ps5-xbox/"
+        }
+      ]
+    },
+    "viewers": {
+      "label": "צופים בסטרימים",
+      "detail": "נתונים חיים מקטגוריית Grand Theft Auto VI לפני ההשקה, לא תחזית ליום הפתיחה.",
+      "capturedAt": "2026-11-16T17:53:12Z",
+      "capturedAtLabel": "16 בנובמבר 2026, 19:53 שעון ישראל",
+      "items": [
+        {
+          "platform": "Twitch",
+          "viewers": 2589,
+          "extra": "133 ערוצים חיים",
+          "peakToday": 14360,
+          "peakTodayLabel": "שיא היום בטוויץ'"
+        },
+        {
+          "platform": "Kick",
+          "viewers": 6190,
+          "extra": null,
+          "peakToday": 7782,
+          "peakTodayLabel": "שיא היום בקיק"
+        },
+        {
+          "platform": "Twitch + Kick, משולב",
+          "viewers": 8779,
+          "extra": null,
+          "peakToday": 11819,
+          "peakTodayLabel": "שיא שעתי משולב ב-48 השעות האחרונות"
+        }
+      ],
+      "sources": [
+        {
+          "name": "NextCounts — Grand Theft Auto VI",
+          "url": "https://nextcounts.com/games/grand-theft-auto-vi"
+        }
+      ]
+    },
+    "trends": {
+      "label": "טרנדים חמים",
+      "x": {
+        "summary": "בבדיקה חיה בערב 16 בנובמבר, GTA 6 לא הופיע ברשימת הטרנדים הרשמית של X בעולם או בישראל. השיח נמשך סביב הורדה מוקדמת, עדכוני קדם-השקה, ממים על סוף ההמתנה וקמפיין חוצות (למשל דיווחים על תחנת King's Cross בלונדון).",
+        "officialTrend": false,
+        "checkedLocations": [
+          "עולם (WOEID 1)",
+          "ישראל (WOEID 23424852)"
+        ]
+      },
+      "tiktok": {
+        "summary": "בימים האחרונים רצים בטיקטוק ובאינסטגרם סרטוני הכנה לקונסולה (\"מספרים\" את ה-PS5 לקראת יום ההשקה), מערכונים על זוגיות מול 19 בנובמבר, ועריכות AI בסגנון מסך טעינה. לא הצלחנו לאמת מספרי צפיות חיים בטיקטוק עצמו.",
+        "sources": [
+          {
+            "name": "VGTimes — סקירת ממים, 13.11.2026",
+            "url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"
+          }
+        ]
+      },
+      "reddit": {
+        "summary": "בדיונים ברשת, כולל כאלה שסוכמו מדיווחי Reddit, בולטים בדיחות על גודל ההורדה (עד כ-212GB) וזמני ההמתנה, ופריקת עותקים פיזיים: בקופסה קוד הורדה ופוסטר, בלי דיסק ובלי מפה — תגובה שחלק מהקונים תיארו כאכזבה.",
+        "sources": [
+          {
+            "name": "Gizbot — הורדה מוקדמת ו-Reddit",
+            "url": "https://www.gizbot.com/gaming/news/gta-6-pre-loading-begins-and-reddit-is-having-a-field-day-129687.html"
+          },
+          {
+            "name": "NME — תגובות לעותק הפיזי",
+            "url": "https://www.nme.com/news/gaming-news/grand-theft-auto-6-physical-copies-map-poster-gta-pre-order-3975888"
+          }
+        ]
+      }
+    },
+    "reactions": [
+      {
+        "who": "Xbox / Microsoft",
+        "text": "הכריזו ש-GTA VI הוא המשחק עם מספר ההזמנות המוקדמות הגבוה ביותר אי-פעם בחנות Microsoft, וקראו להתחיל בהורדה מוקדמת בגלל הביקוש.",
+        "source": {
+          "name": "Xbox Wire, 10.11.2026",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+        }
+      },
+      {
+        "who": "דן קלנסי, מנכ\"ל טוויץ'",
+        "text": "בראיון ב-Bloomberg מ-TwitchCon אמר שההשקה עשויה להיות \"הרגע הכי גדול\" של הפלטפורמה.",
+        "source": {
+          "name": "Bloomberg, 12.11.2026",
+          "url": "https://www.bloomberg.com/news/videos/2026-11-12/twitch-ceo-gta-vi-could-be-our-biggest-moment-video"
+        }
+      },
+      {
+        "who": "קאי סינאט (Kai Cenat)",
+        "text": "אחרי מרתון של כ-130 שעות על משחקי GTA קודמים, אישר בשידור שיחזור בחצות 19 בנובמבר, וביקש מהצופים להישאר מחוץ לרשתות כדי להימנע מספוילרים.",
+        "source": {
+          "name": "NDTV Profit — סטרימרים ליום ההשקה",
+          "url": "https://www.ndtvprofit.com/trending/gta-6-could-break-streaming-records-4-twitch-stars-to-watch-at-launch-12335277"
+        }
+      },
+      {
+        "who": "טייק-טו / שטראוס זלניק",
+        "text": "ההנהלה אמרה שההזמנות המוקדמות עולות על הציפיות, אבל נמנעת מלהכריז על הצלחה לפני שיש נתונים אחרי ההשקה. סנסור טאואר, לפי ביזפורטל, העריכה יותר מ-11 מיליון הזמנות מוקדמות בהיקף של יותר ממיליארד דולר — זו הערכת צד שלישי, לא מספר רשמי של החברה.",
+        "source": {
+          "name": "ביזפורטל, 14–15.11.2026",
+          "url": "https://www.bizportal.co.il/BizTech/news/article/20048561"
+        }
+      }
+    ]
+  },
+  "now": [
+    {
+      "text": "נותרו פחות משלושה ימים לפתיחה: לפי התמיכה של פלייסטיישן, המשחק נפתח בחצות המקומית ב-19 בנובמבר. בישראל זה 00:00 ב-19.11 (18.11 בשעה 22:00 UTC).",
+      "source": {
+        "name": "PlayStation Support",
+        "url": "https://www.playstation.com/en-us/support/games/gta-vi-support/"
+      }
+    },
+    {
+      "text": "ההורדה המוקדמת פתוחה מאז 10 בנובמבר למי שהזמין מראש ב-PS5 או ב-Xbox Series. לפי הדיווחים, כדאי לפנות עד כ-212GB בקונסולה.",
+      "source": {
+        "name": "וואלה טכנולוגיה, 11.11.2026",
+        "url": "https://tech.walla.co.il/item/3875835"
+      }
+    },
+    {
+      "text": "היום נפרס עדכון קדם-השקה שני, גרסה 01.002.001: כ-602.5MB ב-PS5 (בגלים, עם יעד להשלמה עד 17.11) וכ-1.6GB ב-Xbox. רוקסטאר עדיין לא פרסמה הערות עדכון.",
+      "source": {
+        "name": "Vice, 16.11.2026",
+        "url": "https://www.vice.com/en/article/gta-6-second-day-one-patch-ps5-xbox/"
+      }
+    },
+    {
+      "text": "עותקים פיזיים כבר הגיעו לרשתות בישראל, אבל בקופסה יש קוד הורדה ולא דיסק — כך שאפשר להתחיל להוריד לפני הפתיחה אחרי מימוש הקוד.",
+      "source": {
+        "name": "IGN ישראל — אספקת אייבורי מ-15.11",
+        "url": "https://il.ign.com/ps5/80444/mtkhvnnym-lhshkt-gta-6-ayybvry-tthyl-lspk-at-hvtkym-khbr-byvm-hmyshy"
+      }
+    },
+    {
+      "text": "טוויץ' נערכת לאירוע השקה עם Drops בין 18 ל-30 בנובמבר. לפי NextCounts, בשעה 19:53 שעון ישראל נספרו 2,589 צופים בטוויץ' ו-6,190 בקיק בקטגוריית GTA VI (לפני ההשקה).",
+      "source": {
+        "name": "NextCounts",
+        "url": "https://nextcounts.com/games/grand-theft-auto-vi"
+      }
+    }
+  ],
+  "israel": {
+    "intro": "בישראל המשחק ייפתח בחצות 19 בנובמבר. אין עדיין תאריך לגרסת מחשב, והעותק שנמכר בחנויות הוא קוד בקופסה.",
+    "bullets": [
+      {
+        "text": "בחנויות הדיגיטליות הרשמיות של פלייסטיישן ו-Xbox בישראל מדווחים מחיר מחירון של 319 ₪ למהדורה הרגילה ו-399 ₪ ל-Ultimate (כולל מע\"מ).",
+        "source": {
+          "name": "וואלה טכנולוגיה; ביזפורטל (עודכן 15.11)",
+          "url": "https://www.bizportal.co.il/BizTech/news/article/20048561"
+        }
+      },
+      {
+        "text": "רשת אייבורי הודיעה שתחל לספק הזמנות מוקדמות ולתת איסוף מסניפים כבר ב-15 בנובמבר, ארבעה ימים לפני ההשקה.",
+        "source": {
+          "name": "IGN ישראל, 10.11.2026",
+          "url": "https://il.ign.com/ps5/80444/mtkhvnnym-lhshkt-gta-6-ayybvry-tthyl-lspk-at-hvtkym-khbr-byvm-hmyshy"
+        }
+      },
+      {
+        "text": "לפי אייס, המשלוח הראשון הגיע למחסני חשמל ב-12 בנובמבר (329 ₪), וב-15 בנובמבר המשחק הופיע גם באופיס דיפו במחיר 319.90 ₪ (ובאילת 271.10 ₪).",
+        "source": {
+          "name": "אייס, 12.11 ו-15.11.2026",
+          "url": "https://www.ice.co.il/consumerism/news/article/1137368"
+        }
+      },
+      {
+        "text": "ביזפורטל מציין שהמחיר האמריקאי הרשמי הוא 79.99 דולר למהדורה הרגילה, ושהפער מול ישראל מצטמצם אחרי שלוקחים בחשבון מע\"מ.",
+        "source": {
+          "name": "ביזפורטל, 14–15.11.2026",
+          "url": "https://www.bizportal.co.il/BizTech/news/article/20048561"
+        }
+      }
+    ]
+  },
+  "prices": {
+    "intro": "מהדורה רגילה, אלא אם צוין אחרת. מילאנו רק מחירים שאימתנו במקור. מחירים משתנים, ואין כאן המלצת רכישה.",
+    "rows": [
+      {
+        "store": "KSP",
+        "edition": "מהדורה רגילה ל-PS5, קוד בקופסה",
+        "price": "בקרוב",
+        "verified": false,
+        "note": "בדף המוצר הרשמי (פריט 481045) מופיע כרגע \"לא זמין כרגע\", בלי מחיר מוצג. לא נציין סכום שלא מופיע במקור.",
+        "url": "https://ksp.co.il/mob/item/481045"
+      },
+      {
+        "store": "באג",
+        "edition": "מהדורה רגילה ל-PS5 או ל-Xbox Series",
+        "price": "349 ₪",
+        "verified": true,
+        "note": "מופיע בדף ההשקה הרשמי של באג לשתי הפלטפורמות. ביזפורטל אישר את אותו מחיר ב-15.11. מחיר אילת לא אומת על ידנו ישירות באתר.",
+        "url": "https://www.bug.co.il/page/sale/gta/vi"
+      },
+      {
+        "store": "אייבורי",
+        "edition": "מהדורה רגילה ל-PS5 או ל-Xbox",
+        "price": "345 ₪",
+        "verified": true,
+        "note": "בדף הרשמי: 345 ₪, ומחיר באילת 292 ₪, לשתי הפלטפורמות.",
+        "url": "https://www.ivory.co.il/gta6.html"
+      },
+      {
+        "store": "PSN / Xbox",
+        "edition": "מהדורה רגילה דיגיטלית",
+        "price": "319 ₪",
+        "verified": true,
+        "note": "המחיר לא הופיע בטקסט של דפי החנות הרשמיים שנטענים דינמית, אבל וואלה, ביזפורטל ואייס דיווחו באופן עקבי על 319 ₪ למהדורה הרגילה בחנויות הרשמיות בישראל.",
+        "url": "https://store.playstation.com/en-il/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+      },
+      {
+        "store": "PSN / Xbox",
+        "edition": "מהדורת Ultimate דיגיטלית",
+        "price": "399 ₪",
+        "verified": true,
+        "note": "אותם מקורות עיתונאיים מדווחים על 399 ₪ למהדורת Ultimate במחירון הרשמי בישראל.",
+        "url": "https://www.xbox.com/he-IL/games/store/grand-theft-auto-vi/9NL3WWNZLZZN"
+      }
+    ],
+    "sources": [
+      {
+        "name": "KSP — דף המוצר",
+        "url": "https://ksp.co.il/mob/item/481045"
+      },
+      {
+        "name": "באג — GTA VI",
+        "url": "https://www.bug.co.il/page/sale/gta/vi"
+      },
+      {
+        "name": "אייבורי — משחק GTA 6",
+        "url": "https://www.ivory.co.il/gta6.html"
+      },
+      {
+        "name": "PlayStation Store ישראל",
+        "url": "https://store.playstation.com/en-il/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+      },
+      {
+        "name": "חנות Xbox ישראל",
+        "url": "https://www.xbox.com/he-IL/games/store/grand-theft-auto-vi/9NL3WWNZLZZN"
+      },
+      {
+        "name": "וואלה טכנולוגיה",
+        "url": "https://tech.walla.co.il/item/3875835"
+      },
+      {
+        "name": "ביזפורטל",
+        "url": "https://www.bizportal.co.il/BizTech/news/article/20048561"
+      },
+      {
+        "name": "אייס",
+        "url": "https://www.ice.co.il/consumerism/news/article/1137368"
+      }
+    ]
+  },
+  "memes": [
+    {
+      "title": "\"קיבלנו __ לפני GTA 6\"",
+      "text": "המם שליווה את 13 שנות ההמתנה נכנס לשבוע האחרון שלו. משתמשים כותבים שזו הפעם האחרונה שאפשר להשתמש בפורמט באמת, ומותגים וגופים ציבוריים כבר אימצו אותו מזמן.",
+      "source": {
+        "name": "NDTV, נובמבר 2026",
+        "url": "https://www.ndtv.com/feature/everything-before-gta-6-how-13-year-wait-became-internets-favourite-meme-12316309"
+      }
+    },
+    {
+      "title": "מכין את הקונסולה ליום הגדול",
+      "text": "סרטונים שבהם בעלי PS5 \"מספרים\" את הקונסולה כמו אצל הספר, או מנקים אבק מהמאוורר, הפכו לטרנד הכנה לקראת ההשקה. אחד הסרטונים שצוטט ב-VGTimes צבר כמעט 113 אלף לייקים.",
+      "source": {
+        "name": "VGTimes, 13.11.2026",
+        "url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"
+      }
+    },
+    {
+      "title": "19 בנובמבר מול החיים עצמם",
+      "text": "מערכונים על זוגיות, הורות וחופשה מהעבודה ביום ההשקה ממשיכים לרוץ. לצידם יש גם בדיחות על יעד 30 פריימים בשנייה בקונסולות — נתון שגם וואלה דיווחה שרוקסטאר אישרה כבחירה עיצובית.",
+      "source": {
+        "name": "VGTimes; וואלה על 30 FPS",
+        "url": "https://vgtimes.com/gaming-news/174487-less-than-a-week-until-gta-6-the-internet-is-already-going-wild-over-memes.html"
+      }
+    },
+    {
+      "title": "קוד בקופסה, בלי דיסק",
+      "text": "סרטוני אנבוקסינג הפכו גם הם לשיחה: הקופסה הפיזית מכילה קוד הורדה ופוסטר, לא דיסק. חלק מהקונים, לפי NME, היו מאוכזבים מהעדר מפה או חוברת.",
+      "source": {
+        "name": "NME",
+        "url": "https://www.nme.com/news/gaming-news/grand-theft-auto-6-physical-copies-map-poster-gta-pre-order-3975888"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "name": "קטגוריית GTA VI בטוויץ'",
+      "detail": "רשימת השידורים החיים הרשמית בקטגוריה. מספר הצופים משתנה כל הזמן.",
+      "url": "https://www.twitch.tv/directory/category/grand-theft-auto-vi",
+      "kind": "live-directory"
+    },
+    {
+      "name": "NextCounts — מונה צופים חי",
+      "detail": "מעקב משולב אחרי Twitch ו-Kick לקטגוריית GTA VI.",
+      "url": "https://nextcounts.com/games/grand-theft-auto-vi",
+      "kind": "tracker"
+    },
+    {
+      "name": "Kai Cenat",
+      "detail": "תכנן שידור בחצות 19 בנובמבר, לפי דיווח של NDTV Profit. לא אומת כאן שהוא בשידור חי עכשיו.",
+      "url": "https://www.twitch.tv/kaicenat",
+      "kind": "planned"
+    },
+    {
+      "name": "xQc",
+      "detail": "מוזכר באותו דיווח כחלק מיוצרי התוכן הבולטים לקראת שבוע ההשקה, כולל אתגר סיום סיפור. זה תכנון מדווח, לא שידור חי מאומת.",
+      "url": "https://www.twitch.tv/xqc",
+      "kind": "planned"
+    }
+  ],
+  "follow": {
+    "telegram": {
+      "label": "ערוץ טלגרם",
+      "url": "",
+      "placeholder": true,
+      "note": "הערוץ יתווסף כאן כשייפתח."
+    },
+    "x": {
+      "label": "עקבו ב-X",
+      "url": "",
+      "placeholder": true,
+      "note": "חשבון העדכונים יתווסף כאן כשייפתח."
+    }
+  }
+}

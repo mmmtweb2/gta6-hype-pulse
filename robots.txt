@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Disallow: /stats-7b24071085.html

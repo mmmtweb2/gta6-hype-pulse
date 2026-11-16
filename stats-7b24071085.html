@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>מעקב תעבורה — GTA 6 Hype Pulse</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (min-width: 720px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+    .stat-card .num { font-size: 2rem; font-weight: 800; color: var(--gold); line-height: 1.1; }
+    .bars { display: grid; gap: 8px; }
+    .bar-row { display: grid; grid-template-columns: 9rem 1fr 3.5rem; gap: 10px; align-items: center; }
+    .bar-track { height: 12px; background: rgba(255,255,255,0.06); border-radius: 999px; overflow: hidden; }
+    .bar-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--pink), var(--cyan)); border-radius: 999px; transition: width .4s ease; }
+    .bar-row b { font-variant-numeric: tabular-nums; color: var(--cyan-2); text-align: left; }
+    .muted-note { color: var(--muted); font-size: .88rem; }
+    .status-pill { display: inline-block; margin-inline-start: 8px; padding: 2px 8px; border-radius: 999px; font-size: .75rem; font-weight: 700; }
+    .ok { background: #5dffc3; color: #0d2218; }
+    .bad { background: var(--pink-2); color: #2a1020; }
+  </style>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="sun" aria-hidden="true"></div>
+  <main class="wrap" style="padding: 28px 0 64px">
+    <p class="kicker">פרטי · לא מקושר מהאתר</p>
+    <h1>מעקב <em>תעבורה</em></h1>
+    <p class="tagline" style="margin-inline:0">מונים אנונימיים בלבד. בלי כתובות, בלי זהות, בלי עוגיות מעקב.</p>
+    <p class="muted-note">עדכון אחרון: <time id="updated">טוען…</time> <span id="api-status"></span></p>
+
+    <section>
+      <h2>סיכום</h2>
+      <div class="stat-grid">
+        <article class="card stat-card"><h3>צפיות</h3><div class="num" id="v-views">—</div></article>
+        <article class="card stat-card"><h3>מבקרים ייחודיים בערך</h3><div class="num" id="v-uniques">—</div></article>
+        <article class="card stat-card"><h3>היום</h3><div class="num" id="v-today">—</div></article>
+        <article class="card stat-card"><h3>לחיצות</h3><div class="num" id="v-clicks">—</div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>מקורות הגעה</h2>
+      <div class="card"><div class="bars" id="ref-bars"></div></div>
+    </section>
+
+    <section>
+      <h2>לחיצות</h2>
+      <div class="card"><div class="bars" id="click-bars"></div></div>
+    </section>
+
+    <section>
+      <h2>צפיות לפי יום</h2>
+      <p class="muted-note">לפי שעון ישראל (Asia/Hebron), 21 הימים האחרונים.</p>
+      <div class="card"><div class="bars" id="day-bars"></div></div>
+    </section>
+
+    <p class="muted-note">המונים נשמרים בשירות החינמי Abacus כמספרים שלמים בלבד. דגל המבקר הייחודי נשמר מקומית בדפדפן, בלי לזהות אדם.</p>
+  </main>
+  <script>
+    const NS = 'gta6hp-ab8d44a8';
+    const BASE = 'https://abacus.jasoncameron.dev';
+    const REF_LABELS = [
+      ["ref-x", "X / Twitter"],
+      ["ref-google", "Google"],
+      ["ref-facebook", "Facebook"],
+      ["ref-telegram", "Telegram"],
+      ["ref-direct", "ישיר / לא ידוע"],
+      ["ref-other", "אחר"]
+    ];
+    const CLICK_LABELS = [
+      ["click-stream", "קישורי סטרימים"],
+      ["click-cta", "כפתורי הרשמה / מעקב"]
+    ];
+
+    function israelDate(d) {
+      return new Intl.DateTimeFormat("en-CA", {
+        timeZone: "Asia/Hebron",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }).format(d);
+    }
+
+    function formatHe(n) {
+      return Number(n || 0).toLocaleString("he-IL");
+    }
+
+    async function getCount(key) {
+      try {
+        const res = await fetch(BASE + "/get/" + encodeURIComponent(NS) + "/" + encodeURIComponent(key), { cache: "no-store" });
+        if (res.status === 404) return 0;
+        if (!res.ok) throw new Error(String(res.status));
+        const data = await res.json();
+        const value = Number(data && data.value);
+        return Number.isFinite(value) ? value : 0;
+      } catch (e) {
+        throw e;
+      }
+    }
+
+    async function getMany(keys) {
+      const out = {};
+      const chunk = 12;
+      for (let i = 0; i < keys.length; i += chunk) {
+        const slice = keys.slice(i, i + chunk);
+        const values = await Promise.all(slice.map(async (k) => {
+          try { return [k, await getCount(k)]; }
+          catch (e) { return [k, null]; }
+        }));
+        values.forEach(([k, v]) => { out[k] = v; });
+        if (i + chunk < keys.length) await new Promise((r) => setTimeout(r, 1200));
+      }
+      return out;
+    }
+
+    function renderBars(el, rows) {
+      const max = Math.max(1, ...rows.map((r) => r.value));
+      el.innerHTML = rows.map((r) => {
+        const pct = Math.round((r.value / max) * 100);
+        return '<div class="bar-row"><span>' + r.label + '</span><div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div><b>' + formatHe(r.value) + '</b></div>';
+      }).join("");
+    }
+
+    function dayList() {
+      const days = [];
+      const now = new Date();
+      for (let i = 20; i >= 0; i--) {
+        const d = new Date(now.getTime() - i * 86400000);
+        const key = "day-" + israelDate(d);
+        const label = new Intl.DateTimeFormat("he-IL", { timeZone: "Asia/Hebron", day: "2-digit", month: "2-digit" }).format(d);
+        days.push({ key, label });
+      }
+      return days;
+    }
+
+    (async function () {
+      const days = dayList();
+      const todayKey = "day-" + israelDate(new Date());
+      const keys = ["views", "uniques"].concat(REF_LABELS.map((r) => r[0])).concat(CLICK_LABELS.map((r) => r[0])).concat(days.map((d) => d.key));
+      let counts;
+      try {
+        counts = await getMany(keys);
+        document.getElementById("api-status").innerHTML = '<span class="status-pill ok">המונים נטענו</span>';
+      } catch (e) {
+        document.getElementById("api-status").innerHTML = '<span class="status-pill bad">שגיאה בטעינה</span>';
+        document.getElementById("updated").textContent = "נכשל";
+        return;
+      }
+      const failed = Object.values(counts).some((v) => v === null);
+      if (failed) {
+        document.getElementById("api-status").innerHTML = '<span class="status-pill bad">חלק מהמונים לא נטענו</span>';
+      }
+      const num = (k) => counts[k] || 0;
+      document.getElementById("v-views").textContent = formatHe(num("views"));
+      document.getElementById("v-uniques").textContent = formatHe(num("uniques"));
+      document.getElementById("v-today").textContent = formatHe(num(todayKey));
+      document.getElementById("v-clicks").textContent = formatHe(num("click-stream") + num("click-cta"));
+      document.getElementById("updated").textContent = new Intl.DateTimeFormat("he-IL", {
+        timeZone: "Asia/Hebron", dateStyle: "short", timeStyle: "short"
+      }).format(new Date()) + " שעון ישראל";
+
+      renderBars(document.getElementById("ref-bars"), REF_LABELS.map(([k, label]) => ({ label, value: num(k) })));
+      renderBars(document.getElementById("click-bars"), CLICK_LABELS.map(([k, label]) => ({ label, value: num(k) })));
+      renderBars(document.getElementById("day-bars"), days.map((d) => ({ label: d.label, value: num(d.key) })));
+    })();
+  </script>
+</body>
+</html>
